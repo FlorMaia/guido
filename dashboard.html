@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Ernesto Guevara</title>
+    <link rel="stylesheet" href="/publico/css/Stylos.css">
+    <link rel="stylesheet" href="/publico/css/dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Fotos/images.png" alt="Logo del Colegio" id="logo"> <!-- Asegúrate de que la ruta sea correcta -->
+            <h1>Colegio Ernesto Guevara</h1>
+        </div>
+      
+    </header>
+
+    <main class="dashboard">
+        <h2>Dashboard del Administrador</h2>
+        <button id="backBtn" onclick="goBack()"><a href="/publico/Index.html">volver</a></button> <!-- Botón para volver -->
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <h3>Gestión de Usuarios</h3>
+                <button id="addUser Btn">Agregar Usuario</button>
+                <table id="usersTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Tipo de usuario</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Los usuarios se cargarán aquí dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Ernesto Guevara. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/publico/js/dashboard.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();"" 
+            // Regresa a la página anterior
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regristo</title>
+    <link rel="stylesheet" href="/publico/css/LoginYResgristos.css">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background: #ff0000;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            position: relative; /* Para posicionar el logo */
+        }
+
+        h2 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background: #000000;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #e6001b;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para el logo */
+        .logo {
+            position: absolute;
+            top: -60px; /* Ajusta según sea necesario */
+            left: -500px; /* Ajusta según sea necesario */
+            width: 100px; /* Ajusta el tamaño del logo */
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <img src="/Fotos/images.png" alt="Logo" class="logo"> <!-- Logo al costado -->
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <input type="submit" value="Iniciar Sesión" a href="/publico/login.html"> 
+        </form>
+        <div class="links">
+            <a href="../publico/regristo.html">¿No tienes cuenta? Regístrate</a>
+        </div>
+    </div>
+
+    
+</body>
+<script src="/publico/js/login.js"></script>
+</html>
